@@ -14,5 +14,4 @@ Essa é uma lista de exercícios desenvolvidos em Python. O objetivo é demostra
 8. *Classes*
 9. *Projeto Final*
 
-
-**Link dos Exercícios:** [Python Brasil](https://https://wiki.python.org.br/ListaDeExercicios)
+**Link dos Exercícios:** [Python Brasil](https://wiki.python.org.br/ListaDeExercicios)
