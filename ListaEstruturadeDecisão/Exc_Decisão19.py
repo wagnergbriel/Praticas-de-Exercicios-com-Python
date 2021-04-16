@@ -24,7 +24,6 @@ def ordem_dos_numeros(numero):
         dezena = parse_numero[1]
         unidade = parse_numero[2]
         print(f'{numero} = {centena} Centena(s), {dezena} Dezena(s) e {unidade} Unidade(s).')
-    
     else:
         print("O número tem mais de 3 algarismos.")
 
