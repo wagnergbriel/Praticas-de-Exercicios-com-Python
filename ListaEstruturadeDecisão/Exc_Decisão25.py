@@ -42,7 +42,7 @@ def detector_de_criminoso():
         "5":'Assassino'
     }
 
-    resultado = grau_criminalidade[str(contagem)]
+    resultado = grau_criminalidade.get(str(contagem))
     
     return f'\nVocê é {resultado}'
 
