@@ -2,7 +2,7 @@
 
 > Essa é uma lista de exercícios desenvolvidos em Python. O objetivo é demostrar e praticar conceitos de programação de acordo com cada descrição e grau de dificuldade.
 
-** 📑  Abaixo as seguintes listas que serão abordadas:**
+📑 ** Abaixo as seguintes listas que serão abordadas:**
 
 1. *Estrutura Sequencial*
 2. *Estrutura de Decisão*
