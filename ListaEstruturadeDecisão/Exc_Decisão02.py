@@ -7,5 +7,4 @@ def verificar_do_numero(numero:int):
         print(f'{numero} é negativo.')
 
 if __name__ == "__main__":
-    numero = int(input('Digite um número:\n'))
-    verificar_do_numero(numero)
+    verificar_do_numero(2)

@@ -10,4 +10,4 @@ def verificar_paridade(numero:int):
         return f'{numero_impar} é impar.'
 
 if __name__ == '__main__':
-    print(verificar_paridade(101))
+    verificar_paridade(101)

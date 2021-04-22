@@ -11,4 +11,4 @@ def verificar_conjunto_numerico(numero):
     if not type(numero) is int or float: 
         raise TypeError('A variável inserida não é int ou float.')
 
-print(verificar_conjunto_numerico(1.56))
+verificar_conjunto_numerico(1.56)
