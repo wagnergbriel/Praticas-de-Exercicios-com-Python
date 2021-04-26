@@ -8,12 +8,13 @@ Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (e
 def desconto_de_frutas():
     print('                 Até 5 Kg           Acima de 5 \n\
     Morango         R$ 2,50 por Kg          R$ 2,20 por Kg\n\
-    Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg')
+    Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg\n\
+    -------------------------------------------------------\n')
 
     opcao = input('Digite o tipo de fruta que deseja comprar:\n\
-        \tDigite Morango ou Maça.')
+        Digite Morango ou Maça.\n')
     
-    quilos = int(input('Quantos quilos dejesa comprar ?'))
+    quilos = int(input('Quantos quilos dejesa comprar ?\n'))
 
     #preço até 5 kg
     morango5kg = 2.50
@@ -23,21 +24,36 @@ def desconto_de_frutas():
     morangomais5kg = 2.20
     maçamais5kg = 1.50
 
+    valor = 0
+    desconto = 0
+
+
     if opcao == "Morango" and quilos <= 5:
-        valor = quilos * morango5kg
+            valor = quilos * morango5kg
+       
+    elif opcao == "Morango" and quilos > 5:
+            valor = quilos * morangomais5kg
+    
+    elif opcao == "Maça" and quilos <= 5:
+            valor = quilos * maça5kg
+
+    elif opcao == "Maça" and quilos > 5:
+            valor = quilos * maçamais5kg
+
+    elif opcao != "Morango" and  opcao != "Maça":
+            return 'Não foi selecionado a opção correta. Digite Morango ou Maça !'
+           
+    #Calculo de Desconto da promoção
+    if quilos > 8 or valor > 25:
+        desconto = valor - (valor * 0.10)
         return f'------------------------------------\n\
-            Morango:\n\
+            {opcao}:\n\
+            Valor Total:\t{valor:0.2f}\n\
+            Valor da promoção:\t{desconto:0.2f}'
+    else:
+        return f'------------------------------------\n\
+            {opcao}:\n\
             Valor Total:\t{valor:0.2f}\n'
-
-            if quilos > 8 or valor > 25:
-                valor = quilos * morangomais5kg
-                desconto = valor - (valor * 0.10)
-                return f'------------------------------------\n\
-                    Morango:\n\
-                    Valor Total:\t{valor:0.2f}\n\
-                    Valor da promoção:\t{desconto:0.2f}'
-
-
 
 
 
