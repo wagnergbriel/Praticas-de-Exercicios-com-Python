@@ -15,30 +15,30 @@ def desconto_de_frutas():
         Digite Morango ou Maça.\n')
     
     quilos = int(input('Quantos quilos dejesa comprar ?\n'))
+    
+    #Preços das frutas
 
-    #preço até 5 kg
-    morango5kg = 2.50
-    maça5kg = 1.80
+    MORANGOATE5KL = 2.50
+    MAÇAATE5KL = 1.80
 
-    #preço acima de 5 kg
-    morangomais5kg = 2.20
-    maçamais5kg = 1.50
+    MORANGOMAISDE5KL = 2.20
+    MAÇAMAISDE5KL = 1.50
 
     valor = 0
     desconto = 0
 
 
     if opcao == "Morango" and quilos <= 5:
-            valor = quilos * morango5kg
+            valor = quilos * MORANGOATE5KL
        
     elif opcao == "Morango" and quilos > 5:
-            valor = quilos * morangomais5kg
+            valor = quilos * MORANGOMAISDE5KL
     
     elif opcao == "Maça" and quilos <= 5:
-            valor = quilos * maça5kg
+            valor = quilos * MAÇAATE5KL
 
     elif opcao == "Maça" and quilos > 5:
-            valor = quilos * maçamais5kg
+            valor = quilos * MAÇAMAISDE5KL
 
     elif opcao != "Morango" and  opcao != "Maça":
             return 'Não foi selecionado a opção correta. Digite Morango ou Maça !'
