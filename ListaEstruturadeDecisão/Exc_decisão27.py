@@ -9,7 +9,8 @@ def desconto_de_frutas():
     print('                 Até 5 Kg           Acima de 5 \n\
     Morango         R$ 2,50 por Kg          R$ 2,20 por Kg\n\
     Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg\n\
-    -------------------------------------------------------\n')
+    -------------------------------------------------------\n'
+)
 
     opcao = input('Digite o tipo de fruta que deseja comprar:\n\
         Digite Morango ou Maça.\n')
