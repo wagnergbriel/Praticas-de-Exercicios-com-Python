@@ -2,8 +2,8 @@
                       Até 5 Kg           Acima de 5 Kg
 Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
 Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
-Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total.
-Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.'''
+Se o cliente comprar mais de 8 Kg em frutas ou o VALOR total da compra ultrapassar R$ 25,00, receberá ainda um DESCONTO de 10% sobre este total.
+Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o VALOR a ser pago pelo cliente.'''
 
 def desconto_de_frutas():
     print('                 Até 5 Kg           Acima de 5 \n\
@@ -25,36 +25,36 @@ def desconto_de_frutas():
     MORANGOMAISDE5KL = 2.20
     MAÇAMAISDE5KL = 1.50
 
-    valor = 0
-    desconto = 0
+    VALOR = 0
+    DESCONTO = 0
 
 
     if opcao == "Morango" and quilos <= 5:
-            valor = quilos * MORANGOATE5KL
+            VALOR = quilos * MORANGOATE5KL
        
     elif opcao == "Morango" and quilos > 5:
-            valor = quilos * MORANGOMAISDE5KL
+            VALOR = quilos * MORANGOMAISDE5KL
     
     elif opcao == "Maça" and quilos <= 5:
-            valor = quilos * MAÇAATE5KL
+            VALOR = quilos * MAÇAATE5KL
 
     elif opcao == "Maça" and quilos > 5:
-            valor = quilos * MAÇAMAISDE5KL
+            VALOR = quilos * MAÇAMAISDE5KL
 
     elif opcao != "Morango" and  opcao != "Maça":
             return 'Não foi selecionado a opção correta. Digite Morango ou Maça !'
            
-    #Calculo de Desconto da promoção
-    if quilos > 8 or valor > 25:
-        desconto = valor - (valor * 0.10)
+    #Calculo de DESCONTO da promoção
+    if quilos > 8 or VALOR > 25:
+        DESCONTO = VALOR - (VALOR * 0.10)
         return f'------------------------------------\n\
             {opcao}:\n\
-            Valor Total:\t{valor:0.2f}\n\
-            Valor da promoção:\t{desconto:0.2f}'
+            Valor Total:\t{VALOR:0.2f}\n\
+            Valor da promoção:\t{DESCONTO:0.2f}'
     else:
         return f'------------------------------------\n\
             {opcao}:\n\
-            Valor Total:\t{valor:0.2f}\n'
+            Valor Total:\t{VALOR:0.2f}\n'
 
 
 
