@@ -10,3 +10,5 @@ while(bool):
     if nota == 10:
         print('Você acertou o valor da nota')
         bool = False
+    else:
+        print('Você errou o valor da nota.')
