@@ -1,4 +1,4 @@
-#Faça um Programa que peça dois números e imprima o maior deles.
+'''faça um programa que peça dois números e imprima o maior deles.'''
 
 def maior_numero(primeironumero:int, segundonumero:int):
     if primeironumero > segundonumero:

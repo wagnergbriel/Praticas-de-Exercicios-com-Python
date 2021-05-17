@@ -5,7 +5,7 @@ válido.
 '''
 BOOL = True
 while BOOL:
-    nota = int(input('Digite uma nota entre 0 e 10.\n'))    
+    nota = int(input('Digite uma nota entre 0 e 10.\n'))
     if nota == 10:
         print('Você acertou o valor da nota')
         BOOL = False
