@@ -5,4 +5,4 @@ NUMERO_IMPAR = 0
 while NUMERO_IMPAR < 50:
     NUMERO_IMPAR += 1
     if NUMERO_IMPAR % 2 != 0:
-        print(NUMERO_IMPAR)
+        print(NUMERO_IMPAR, end=" ")
