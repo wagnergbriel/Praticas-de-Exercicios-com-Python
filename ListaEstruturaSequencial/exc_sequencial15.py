@@ -17,25 +17,20 @@ e - calcule os descontos e o salário líquido, conforme a tabela abaixo:
 
 Obs.: Salário Bruto - Descontos = Salário Líquido.
 '''
+salarioporhora = int(input('Quanto você ganha por hora ?\n'))
+horastrabalhadasmes = int(input('Quantas horas trabalhou no mês ?\n'))
 
-def total_salario_por_mes(salarioporhora, horastrabalhadasmes):
-    salariototal = salarioporhora * horastrabalhadasmes
-    print(f'\nSeu salário bruto no mês é R$ {salariototal:0.2f}\n')
+salariototal = salarioporhora * horastrabalhadasmes
+print(f'\nSeu salário bruto no mês é R$ {salariototal:0.2f}\n')
 
-    ir = salariototal * 0.11
-    print(f'Seu imposto de renda no mês é R$ {ir:0.2f}\n')
+ir = salariototal * 0.11
+print(f'Seu imposto de renda no mês é R$ {ir:0.2f}\n')
 
-    inss = salariototal * 0.08
-    print(f'Seu INSS no mês é R$ {inss:0.2f}\n')
+inss = salariototal * 0.08
+print(f'Seu INSS no mês é R$ {inss:0.2f}\n')
 
-    sindicato = salariototal * 0.05
-    print(f'Seu sindicato no mês é R$ {sindicato:0.2f}\n')
+sindicato = salariototal * 0.05
+print(f'Seu sindicato no mês é R$ {sindicato:0.2f}\n')
     
-    salarioliquido = salariototal - (ir + inss + sindicato)
-    print(f'Seu salário líquido no mês ficou R$ {salarioliquido:0.2f}\n')
-
-
-if __name__ == "__main__":
-    ganhoporhora = int(input('Quanto você ganha por hora ?\n'))
-    qtdhorastrabalhadasmes = int(input('Quantas horas trabalhou no mês ?\n'))
-    total_salario_por_mes(ganhoporhora, qtdhorastrabalhadasmes)
+salarioliquido = salariototal - (ir + inss + sindicato)
+print(f'Seu salário líquido no mês ficou R$ {salarioliquido:0.2f}\n')
