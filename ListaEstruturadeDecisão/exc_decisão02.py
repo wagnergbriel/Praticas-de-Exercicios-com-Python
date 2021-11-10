@@ -4,6 +4,6 @@ Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou 
 
 numero = 2
 if numero <= 0:
-    print(f'{numero} é negativo.')
+    print(f"{numero} é negativo.")
 else:
-    print(f'{numero} é positivo.')
+    print(f"{numero} é positivo.")
