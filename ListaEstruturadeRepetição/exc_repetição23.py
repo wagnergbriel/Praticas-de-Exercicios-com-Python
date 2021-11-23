@@ -2,7 +2,6 @@
 O programa deverá mostrar também o número de divisões que ele executou para encontrar os números primos.
 Serão avaliados o funcionamento, o estilo e o número de testes (divisões) executados.'''
 numeroprimo = int(input("Digite o número para verificar se é primo ou não:\n"))
-divisor = 0
 
 for i in range(1, numeroprimo):
     if i % 2 == 1 and i != 2:
