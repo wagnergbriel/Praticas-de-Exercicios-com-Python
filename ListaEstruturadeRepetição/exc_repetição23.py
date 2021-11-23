@@ -6,6 +6,4 @@ divisor = 0
 
 for i in range(1, numeroprimo):
     if i % 2 == 1 and i != 2:
-    #divisor += 1
-    #divisor += 1
         print(f"{i} é um número primo", end=" | ")
